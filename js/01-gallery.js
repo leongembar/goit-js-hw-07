@@ -53,6 +53,7 @@ function onShowModal(e) {
       
         if (e.code === "Escape") {
           instance.close();
+          document.removeEventListener("keydown", onCloseModal);
         }
       }
   }
